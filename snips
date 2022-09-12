@@ -104,7 +104,7 @@
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
     {trigger: "sum", replacement: "\\sum", options: "mA"},
     {trigger: "prod", replacement: "\\prod", options: "mA"},
-    {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
+    {trigger: "lim", replacement: "\\displaystyle\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
     {trigger: "pm", replacement: "\\pm", options: "m"},
     {trigger: "...", replacement: "\\dots", options: "mA"},
     {trigger: "->", replacement: "\\to", options: "mA"},
