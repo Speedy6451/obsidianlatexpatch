@@ -105,6 +105,9 @@
     {trigger: "sum", replacement: "\\sum", options: "mA"},
     {trigger: "prod", replacement: "\\prod", options: "mA"},
     {trigger: "lim", replacement: "\\displaystyle\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
+// piecewise
+    {trigger: "pw", replacement: "\\left\\{ \\begin{array}{ll} ${0:1} \\quad ${1:x>0} \\\\ ${2:-1} \\quad ${3:x\\leq0} \\end{array}\\right. $4", options: "mA"},
+//	$\displaystyle\lim_{ x \to 4 }  \left\{ \begin{array}{ll} \sqrt{ x-4 } \quad x > 4 \\ 8-2x \quad x\leq4 \end{array} \right.$
     {trigger: "pm", replacement: "\\pm", options: "m"},
     {trigger: "...", replacement: "\\dots", options: "mA"},
     {trigger: "->", replacement: "\\to", options: "mA"},
