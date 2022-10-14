@@ -1,7 +1,7 @@
 [
     // Math mode
     {trigger: " mk", replacement: "$$0$", options: "tA"},
-    {trigger: " dm", replacement: "$$\n$0\n$$", options: "tA"},
+    {trigger: " dm", replacement: "$$\n$0\n$$", options: "tAw"},
     {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
 
@@ -108,7 +108,6 @@
     {trigger: "lim", replacement: "\\displaystyle\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
 // piecewise
     {trigger: "pw", replacement: "\\left\\{ \\begin{array}{ll} ${0:1} \\quad ${1:x>0} \\\\ ${2:-1} \\quad ${3:x\\leq0} \\end{array}\\right. $4", options: "mA"},
-//	$\displaystyle\lim_{ x \to 4 }  \left\{ \begin{array}{ll} \sqrt{ x-4 } \quad x > 4 \\ 8-2x \quad x\leq4 \end{array} \right.$
     {trigger: "pm", replacement: "\\pm", options: "m"},
     {trigger: "...", replacement: "\\dots", options: "mA"},
     {trigger: "->", replacement: "\\to", options: "mA"},
@@ -179,11 +178,11 @@
 
 
     // Derivatives
-    {trigger: "par", replacement: "\\frac{ \\partial ${0:y} }{ \\partial ${1:x} } $2", options: "mA"},
+    {trigger: "par", replacement: "\\frac{ \\partial ${0:y} }{ \\partial ${1:x} } $2", options: "m"},
     {trigger: "pa2", replacement: "\\frac{ \\partial^{2} ${0:y} }{ \\partial ${1:x}^{2} } $2", options: "mA"},
     {trigger: "pa3", replacement: "\\frac{ \\partial^{3} ${0:y} }{ \\partial ${1:x}^{3} } $2", options: "mA"},
     {trigger: "pa([A-Za-z])([A-Za-z])", replacement: "\\frac{ \\partial [[0]] }{ \\partial [[1]] } ", options: "rm"},
-    {trigger: "pa([A-Za-z])([A-Za-z])([A-Za-z])", replacement: "\\frac{ \\partial^{2} [[0]] }{ \\partial [[1]] \\partial [[3]] } ", options: "rm"},
+    {trigger: "pa([A-Za-z])([A-Za-z])([A-Za-z])", replacement: "\\frac{ \\partial^{2} [[0]] }{ \\partial [[1]] \\partial [[2]] } ", options: "rm"},
     {trigger: "pa([A-Za-z])([A-Za-z])2", replacement: "\\frac{ \\partial^{2} [[0]] }{ \\partial [[1]]^{2} } ", options: "rmA"},
     {trigger: "de([A-Za-z])([A-Za-z])", replacement: "\\frac{ d[[0]] }{ d[[1]] } ", options: "rm"},
     {trigger: "de([A-Za-z])([A-Za-z])2", replacement: "\\frac{ d^{2}[[0]] }{ d[[1]]^{2} } ", options: "rmA"},
