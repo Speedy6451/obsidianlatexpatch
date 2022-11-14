@@ -103,7 +103,8 @@
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
-    {trigger: "sum", replacement: "\\sum", options: "mA"},
+    //{trigger: "sum", replacement: "\\sum", options: "mA"},
+    {trigger: "sum", replacement: "\\displaystyle\\sum^{ ${0:n} }_{ ${1:i=1}} ${2:i}", options: "mA"},
     {trigger: "prod", replacement: "\\prod", options: "mA"},
     {trigger: "lim", replacement: "\\displaystyle\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
 // piecewise
